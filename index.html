@@ -7,15 +7,9 @@
 <body>
 
     <main>
-        <h2 id="intro">In Loving Memory Of</h2>
-
-        <h1 id="name">Zoya Segers</h1>
-
         <div id="image">
-            <img src="./zoya.jpg" alt="Picture Of Zoya">
+            <img class="profile-image" src="./zoya_grave.png" alt="Picture Of Zoya">
         </div>
-
-        <h3 id="period">04/02/2021 - 05/02/2021</h3>
     </main>
 
 </body>
@@ -24,40 +18,29 @@
         margin: 0 0 0 0;
         padding: 0 0 0 0;
         font-size: 16px;
-        font-family: "Abyssinica SIL";
     }
 
     main{
         min-width: 500px;
-        margin: 150px auto 0 auto;
+        margin: 50px auto 0 auto;
     }
 
     main > h1, h2, h3 {
         text-align: center;
     }
 
-    #intro{
-        font-size: 2rem;
-    }
-
-    #name{
-        margin-top: 30px;
-        font-size: 6rem;
-        color: pink;
-    }
-
-    #period{
-        margin-top: 50px;
-        font-size: 1.5rem;
-    }
-
     #image{
-        margin: 50px auto 20px auto;
+        margin: 30px auto 20px auto;
         text-align: center;
     }
 
     #image > img{
         width: 600px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-animation: blur 10s infinite;
+        animation: blur 10s infinite;
     }
 
 </style>
